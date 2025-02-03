@@ -1,6 +1,6 @@
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #292E1E;
+    background-color: #303030;
     color: white;
     margin: 0;
     padding: 0;
@@ -10,25 +10,11 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     min-height: 400px;
     padding: 100px 20vw;
-}
-
-.curve {
-    position: absolute;
-    height: 225px;
-    width: 100%;
-    bottom: 0;
-}
-
-.curve::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
+    overflow: hidden;
 }
 
 .dblue {
@@ -48,3 +34,71 @@ section {
 .red {
     background: #ba4c40;
   }
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 105px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill: #F07838;
+}
+
+.wave2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave2 svg {
+  position: relative;
+  display: block;
+  width: calc(163% + 1.3px);
+  height: 204px;
+}
+
+.wave2 .shape-fill {
+  fill: #F5C9A8;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('./layer1.svg');
+}
+
+.layer2 {
+  background-image: url('./layer2.svg');
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+.blob-motion {
+  position: absolute;
+  transform: translateY(-20%);
+  z-index: 0;
+}
