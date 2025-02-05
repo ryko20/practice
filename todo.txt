@@ -3,3 +3,5 @@ https://www.youtube.com/watch?v=Q7AOvWpIVHU - Three.js tutorial
 https://www.youtube.com/watch?v=PkADl0HubMY&t=231s - Cool Website Build
 https://www.youtube.com/watch?v=UTHgr6NLeEw - Cool SVG/CSS Techs
 https://www.youtube.com/watch?v=TBIjgBVFjVI - FE Web development is changing
+
+Rust - https://doc.rust-lang.org/book/ch01-03-hello-cargo.html
